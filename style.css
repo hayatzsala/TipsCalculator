@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size:24px;
+  font-family: Space Mono;
+  font-weight:700;
+}
+.main-screen{
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+  
+  background-image: url('design/pawel-czerwinski-YuJm-d7k2Jg-unsplash.jpg');
+}
+.background {
+  background-color:hsl(185, 41%, 84%);
+   margin: auto;
+  width: 100%;
+padding: 10px;
+  opacity: 1;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+.container{
+  padding :10px;
+  background-color: white;
+  margin: auto;
+  width: 75%;
+  border-radius: 15px;
+}
+.btn-primary{
+  background-color: hsl(183, 100%, 15%);
+  width:100px;
+  border: none;
+  margin: 2px;
+}
+.btn-primary:hover{
+  background-color: hsl(172, 67%, 45%);
+}
+
+.input-data{
+  background-color: white;
+  color:hsl(186, 14%, 43%);
+  font-size: 24px;
+  font-family: Space Mono;
+  font-weight: 700;
+  border-radius: 15%;
+}
+.result-data{
+  background-color:hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 15px;
+}
+#total, #tips{
+  color: hsl(172, 67%, 45%)
+}
+
+#reset{
+  background-color: hsl(172, 67%, 45%);
+  color :hsl(183, 100%, 15%);
+  width: 75%;
+}
+label{
+    padding: 0px;
+}
+input{
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+@media only screen and (max-width: 375px) {
+  .row{
+    display:flex;
+    flex-direction:column;
+  }
+  .input-data, .result-data{
+    width: 100%;
+  }
+  .main-screen{
+    padding: 0%;
+    
+  }
+  .background{
+    margin: 0%;
+  }
+}

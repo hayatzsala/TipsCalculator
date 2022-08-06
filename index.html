@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href=".\style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <div class="main-screen">
+    <div class="shadow-lg rounded">
+      <div class="background">
+        <img src="./images/logo.svg" alt="logo" />
+        <div>
+          <div class="container">
+            <div class="row justify-content-evenly">
+              <div class="col-5 input-data">
+                <div class="row">
+                  <label>Bills</label>
+                  <input type="text" placeholder="$" id="bill" />
+                </div>
+                <div class="row">
+                  <label>Selected Tips</label>
+                </div>
+                <div class="row">
+                  <input type="button" name="val_5" value="5 %" class="tips btn btn-primary btn-sm" />
+                  <input type="button" name="val_10" value="10%" class="tips btn btn-primary btn-sm" />
+                  <input type="button" name="val_15" value="15%" class="tips btn btn-primary btn-sm" />
+                  <input type="button" name="val_25" value="25%" class="tips btn btn-primary btn-sm" />
+                  <input type="button" name="val_50" value="50%" class="tips btn btn-primary btn-sm" />
+                  <input type="button" name="val_custome" value="Custom" class="tips btn btn-primary btn-sm" />
+                </div>
+                <div class="row">
+                  <label>Number of people</label>
+                  <input type="text" name="num-of-people" placeholder="#" id="num-of-people" />
+                </div>
+              </div>
+              <div class="col-5 result-data">
+                <div class="row">
+                  <div class="col-8">
+                    <label>Tip Amount</label>
+                  </div>
+                  <div class="col">
+                    <span id="tips">0.0</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8">
+                    <label>Total</label>
+                  </div>
+                  <div class="col">
+                    <span id="total">0.0</span>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col">
+                    <button id="reset">RESET</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hayat Salawdeh</a>.
+
+  </div>
+  <script src="script.js">
+  </script>
+
+</body>
+
+</html>
